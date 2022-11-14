@@ -8,14 +8,14 @@ import { Form } from '../Other/Form'
 import { AddEmployeesTable } from './AddEmployeesTable'
 
 export const AddEmployees = () => {
-  const emplyeesInJson = getLocalStorage(
+  const employeesInJson = getLocalStorage(
     EMPLOYEE_LOCAL_STORAGE_KEY,
     NO_EMPLOYEES_LOCAL_STORAGE_VALUE
   )
 
   const [name, setName] = useState('')
   const [title, setTitle] = useState('')
-  const [employees, setEmployees] = useState(JSON.parse(emplyeesInJson))
+  const [employees, setEmployees] = useState(JSON.parse(employeesInJson))
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -43,9 +43,6 @@ export const AddEmployees = () => {
     [employees]
   )
 
-  const onChangeName = (e) => setName(e.target.value)
-  const onChangeTitle = (e) => setTitle(e.target.value)
-
   return (
     <div className='add-employess'>
       <h1>Grant employees access to www.cvr.dk</h1>
@@ -55,8 +52,8 @@ export const AddEmployees = () => {
           placeholderTwo='Insert title...'
           valueOne={name}
           valueTwo={title}
-          onChangeOne={onChangeName}
-          onChangeTwo={onChangeTitle}
+          onChangeOne={(e) => setName(e.target.value)}
+          onChangeTwo={(e) => setTitle(e.target.value)}
           onClick={handleSubmit}
           btnTitle='Add Employee'
         />

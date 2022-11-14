@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { COMPANIES_PER_PAGE } from '../../Constants/Constants'
 import { SearchCompany } from './SearchCompany'
 import { SearchPagination } from './SearchPagination'
-import { SearchApi } from './SearchApi'
+import { SearchApi } from '../../Backend/SearchApi'
 import { SearchNoResults } from './SearchNoResults'
 import { JsData } from '../../Backend/Data'
 

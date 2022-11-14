@@ -20,9 +20,9 @@ export const AppProvider = ({ children }) => {
   }
 
   const logIn = (object) => {
-    const stringyfiedObject = JSON.stringify(object)
-    setLogin(stringyfiedObject)
-    localStorage.setItem(AUTH_LOCAL_STORAGE_KEY, stringyfiedObject)
+    const stringifiedObject = JSON.stringify(object)
+    setLogin(stringifiedObject)
+    localStorage.setItem(AUTH_LOCAL_STORAGE_KEY, stringifiedObject)
   }
 
   const openModal = () => setIsModalOpen(true)

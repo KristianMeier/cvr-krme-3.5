@@ -1,5 +1,5 @@
-import { JsData } from '../../Backend/Data'
-import { COMPANIES_PER_PAGE } from '../../Constants/Constants'
+import { JsData } from './Data'
+import { COMPANIES_PER_PAGE } from '../Constants/Constants'
 
 const allCompanies = JsData.searchData.companies
 
