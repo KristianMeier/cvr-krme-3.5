@@ -9,7 +9,7 @@ import { JsData } from '../../Backend/Data'
 const allCompanies = JsData.searchData.companies
 const startPages = Math.ceil(allCompanies.length / COMPANIES_PER_PAGE)
 
-export const Search = ({ searchField, setSearchField }) => {
+export const Search = ({ searchField }) => {
   const [nPages, setNPages] = useState(startPages)
   const [companies, setCompanies] = useState([])
   const [page, setPage] = useState(1)
@@ -39,5 +39,6 @@ export const Search = ({ searchField, setSearchField }) => {
         )}
       </div>
     )
+
   return
 }

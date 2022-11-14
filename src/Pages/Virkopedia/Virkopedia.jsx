@@ -19,10 +19,10 @@ export const Virkopedia = () => {
             return (
               <VirkopediaTab
                 key={arrayIndex}
-                setValue={setActiveButtonIndex}
+                setActiveButtonIndex={setActiveButtonIndex}
                 heading={heading}
                 arrayIndex={arrayIndex}
-                value={activeButtonIndex}
+                activeButtonIndex={activeButtonIndex}
               />
             )
           })}

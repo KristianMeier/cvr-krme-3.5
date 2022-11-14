@@ -12,6 +12,7 @@ export const AddEmployees = () => {
     EMPLOYEE_LOCAL_STORAGE_KEY,
     NO_EMPLOYEES_LOCAL_STORAGE_VALUE
   )
+  console.log(JSON.parse(employeesInJson))
 
   const [name, setName] = useState('')
   const [title, setTitle] = useState('')

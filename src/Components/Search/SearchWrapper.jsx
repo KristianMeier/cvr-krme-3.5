@@ -17,7 +17,7 @@ export const SearchWrapper = () => {
             onChange={(e) => setSearchField(e.target.value)}
           />
         </div>
-        <Search searchField={searchField} setSearchField={setSearchField} />
+        <Search searchField={searchField} />
       </section>
     </div>
   )

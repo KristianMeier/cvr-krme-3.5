@@ -3,8 +3,8 @@ import { COMPANIES_PER_PAGE } from '../Constants/Constants'
 
 const allCompanies = JsData.searchData.companies
 
-export const SearchApi = (searchString, page) => {
-  if (searchString === '') {
+export const SearchApi = (searchField, page) => {
+  if (searchField === '') {
     return {
       page: 1,
       numberOfPages: Math.floor(allCompanies.length / COMPANIES_PER_PAGE),
@@ -14,8 +14,8 @@ export const SearchApi = (searchString, page) => {
 
   const filteredCompanies = allCompanies.filter((company) => {
     return (
-      company.companyName.toLowerCase().includes(searchString.toLowerCase()) ||
-      company.address.toLowerCase().includes(searchString.toLowerCase())
+      company.companyName.toLowerCase().includes(searchField.toLowerCase()) ||
+      company.address.toLowerCase().includes(searchField.toLowerCase())
     )
   })
 
