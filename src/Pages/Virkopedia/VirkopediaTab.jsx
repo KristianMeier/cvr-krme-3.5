@@ -1,7 +1,14 @@
-export const VirkopediaTab = ({ heading, index, value, setValue }) => (
+export const VirkopediaTab = ({
+  heading,
+  arrayIndex,
+  activeButtonIndex,
+  setActiveButtonIndex,
+}) => (
   <button
-    onClick={() => setValue(index)}
-    className={`article-btn ${index === value && 'active-btn'}`}
+    onClick={() => setActiveButtonIndex(arrayIndex)}
+    className={`article-btn ${
+      arrayIndex === activeButtonIndex && 'active-btn'
+    }`}
   >
     {heading}
   </button>

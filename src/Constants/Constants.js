@@ -9,7 +9,7 @@ export const LIGHT_THEME = 'light-theme'
 export const DARK_THEME = 'dark-theme'
 
 // Pagination
-export const RECORDS_PER_PAGE = 3
+export const COMPANIES_PER_PAGE = 3
 
 // Paths
 export const LANDING_PAGE_PATH = '/'

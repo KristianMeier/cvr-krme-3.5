@@ -1,14 +1,14 @@
-import { PlaceholderWrapper } from "../../Components/Placeholder/PlaceholderWrapper";
-import { JsData } from "../../Data/Data";
-import { Placeholder } from "../../Components/Placeholder/Placeholder";
-import { Modal } from "../../Components/Other/Modal";
-import { SearchWrapper } from "../../Components/Search/SearchWrapper";
+import { PlaceholderWrapper } from '../../Components/Placeholder/PlaceholderWrapper'
+import { Placeholder } from '../../Components/Placeholder/Placeholder'
+import { Modal } from '../../Components/Other/Modal'
+import { SearchWrapper } from '../../Components/Search/SearchWrapper'
+import { JsData } from '../../Backend/Data'
 
 const placeholderWrapperData = [
   JsData.placeholderData.rowOne,
   JsData.placeholderData.rowTwo,
   JsData.placeholderData.rowThree,
-];
+]
 
 export const LandingPage = () => (
   <>
@@ -20,6 +20,6 @@ export const LandingPage = () => (
         ))}
       </PlaceholderWrapper>
     ))}
-    <Modal title="You have signed out" />
+    <Modal title='You have signed out' />
   </>
-);
+)

@@ -1,32 +1,30 @@
-import { RECORDS_PER_PAGE } from "../../Constants/Constants";
-import { JsData } from "../../Data/Data";
+import { JsData } from '../../Backend/Data'
+import { COMPANIES_PER_PAGE } from '../../Constants/Constants'
 
-const allCompanies = JsData.searchData.companies;
-
-const filterFields = ["companyName", "cvrNumber", "address"];
+const allCompanies = JsData.searchData.companies
 
 export const SearchApi = (searchString, page) => {
-  if (searchString === "") {
+  if (searchString === '') {
     return {
       page: 1,
-      numberOfPages: Math.floor(allCompanies.length / RECORDS_PER_PAGE),
+      numberOfPages: Math.floor(allCompanies.length / COMPANIES_PER_PAGE),
       results: [],
-    };
+    }
   }
 
-  const filteredCompanies = allCompanies.filter(
-    company =>
-      filterFields.map(filter =>
-        company[filter].toLowerCase().includes(searchString.toLowerCase())
-      ).filter(e => e).length
-  )
+  const filteredCompanies = allCompanies.filter((company) => {
+    return (
+      company.companyName.toLowerCase().includes(searchString.toLowerCase()) ||
+      company.address.toLowerCase().includes(searchString.toLowerCase())
+    )
+  })
 
-  const firstElement = page * RECORDS_PER_PAGE - RECORDS_PER_PAGE;
-  const lastElement = page * RECORDS_PER_PAGE;
+  const firstElement = page * COMPANIES_PER_PAGE - COMPANIES_PER_PAGE
+  const lastElement = page * COMPANIES_PER_PAGE
 
   return {
     page: page,
-    numberOfPages: Math.ceil(filteredCompanies.length / RECORDS_PER_PAGE),
+    numberOfPages: Math.ceil(filteredCompanies.length / COMPANIES_PER_PAGE),
     results: filteredCompanies.slice(firstElement, lastElement),
-  };
-};
+  }
+}

@@ -1,4 +1,4 @@
-import { JsData } from '../../../Data/Data'
+import { JsData } from '../../../Backend/Data'
 import { FooterSection } from './FooterSection'
 
 export const FooterSections = [

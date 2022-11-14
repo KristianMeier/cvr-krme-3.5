@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { convertSearchData } from '../../Utilities/convertSearchData'
+import { convertSearchData } from '../../Backend/convertSearchData'
 
 export const SearchCompany = ({ company }) => {
   const convertedData = convertSearchData({ ...company })
