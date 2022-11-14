@@ -1,0 +1,59 @@
+.add-employess {
+  @include component-container;
+
+  .container {
+    @include flex-col-gap-1rem;
+    width: 80%;
+    gap: 2rem;
+
+    @include breakpoint-md-up {
+      flex-direction: row;
+      align-items: space-evenly;
+      width: 100%;
+    }
+  }
+
+  .form-container {
+    flex: 0 0 40%;
+    align-self: flex-end;
+    width: 100%;
+    border: $border;
+  }
+
+  .table {
+    width: 100%;
+
+    .remove-btn {
+      @include borderless-button;
+    }
+
+    td:first-child,
+    th:first-child {
+      text-align: left;
+      padding-left: 1rem;
+    }
+
+    tr {
+      border: $border;
+    }
+
+    table {
+      width: 100%;
+      border: $border;
+      text-align: center;
+      line-height: 1.75rem;
+    }
+
+    .text-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      border: $border;
+    }
+
+    h3 {
+      padding: 1rem;
+    }
+  }
+}

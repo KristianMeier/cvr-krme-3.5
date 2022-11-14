@@ -1,0 +1,11 @@
+.my-account {
+  @include component-container;
+
+  button {
+    @include large-button;
+  }
+
+  p {
+    line-height: 1.5rem;
+  }
+}

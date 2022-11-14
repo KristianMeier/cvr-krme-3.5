@@ -1,0 +1,68 @@
+.search {
+  @include component-container;
+
+  .title {
+    margin-bottom: 1rem;
+  }
+
+  .user-hint {
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  input {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    border: $border;
+  }
+
+  .search-company {
+    text-decoration: none;
+
+    .search-article {
+      @include flex-col-gap-1rem;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-bottom: 2rem;
+      border: $border;
+      padding: 1.5rem;
+
+      @include breakpoint-md-up {
+        flex-direction: row;
+      }
+    }
+
+    .search-content {
+      @include breakpoint-md-up {
+        flex: 0 0 calc(50% - 1rem);
+      }
+
+      @include breakpoint-xmd-up {
+        flex: 0 0 calc(25% - 1rem);
+      }
+    }
+  }
+
+  .search-pagination {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .pagination-numbers {
+      @include borderless-button;
+      font-size: 1.25rem;
+      font-weight: $font-weight-bold;
+    }
+  }
+}

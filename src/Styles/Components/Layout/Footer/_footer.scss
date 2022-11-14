@@ -1,0 +1,49 @@
+.footer {
+  @include flex-col-gap-1rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 4rem 2rem;
+  margin-top: 3rem;
+  box-shadow: var(--border-shadow);
+  padding: 2rem;
+
+  @include breakpoint-sm-up {
+    flex-direction: row;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint-sm-up {
+      flex: 0 0 calc(50% - 2rem);
+    }
+
+    @include breakpoint-xmd-up {
+      flex: 0 0 calc(25% - 2rem);
+    }
+  }
+
+  .footer-section {
+    @include flex-col-gap-1rem;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint-sm-up {
+      flex: 0 0 calc(50% - 2rem);
+    }
+
+    @include breakpoint-xmd-up {
+      flex: 0 0 calc(25% - 2rem);
+    }
+
+    .odd-link:nth-child(odd) {
+      font-weight: $font-weight-bold;
+    }
+
+    .first-link:first-child {
+      font-weight: $font-weight-bold;
+    }
+  }
+}

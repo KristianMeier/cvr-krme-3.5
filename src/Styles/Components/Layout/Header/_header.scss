@@ -1,0 +1,19 @@
+.header {
+  @include center-component;
+  margin-top: 2rem;
+  padding-left: 0.5rem;
+
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .header-link {
+    text-decoration: none;
+  }
+
+  h1 {
+    margin-bottom: 0.75rem;
+  }
+}

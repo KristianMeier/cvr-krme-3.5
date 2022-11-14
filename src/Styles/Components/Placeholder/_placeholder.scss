@@ -1,0 +1,30 @@
+.placeholder-wrapper {
+  @include center-component;
+  @include flex-col-gap-1rem;
+
+  @include breakpoint-md-up {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .placeholder-col-3,
+  .placeholder-col-2,
+  .placeholder-col-1 {
+    @include component-container;
+
+    h3 {
+      justify-content: right;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  @include breakpoint-md-up {
+    .placeholder-col-3 {
+      flex: 0 0 calc(33.33% - 1.5rem);
+    }
+
+    .placeholder-col-2 {
+      flex: 0 0 calc(50% - 1.5rem);
+    }
+  }
+}

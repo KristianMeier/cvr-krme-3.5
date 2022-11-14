@@ -1,0 +1,25 @@
+//Global
+@import 'global-styling';
+
+//Variables and Mixins
+@import 'variables';
+@import 'mixins';
+
+//Components
+@import 'Components/Account/account';
+@import 'Components/AddEmployees/add-employees';
+@import 'Components/Layout/DarkmodeWrapper/darkmode-wrapper';
+@import 'Components/Layout/Footer/footer';
+@import 'Components/Layout/Header/header';
+@import 'Components/Layout/MainContainer/main-container';
+@import 'Components/Layout/Navbar/navbar';
+@import 'Components/Other/modal';
+@import 'Components/Other/form';
+@import 'Components/Other/input-field';
+@import 'Components/Placeholder/placeholder';
+@import 'Components/Search/search';
+
+//Pages
+@import 'Pages/Company/company';
+@import 'Pages/SignInPage/sign-in-page';
+@import 'Pages/Virkopedia/virkopedia';

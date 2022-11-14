@@ -1,0 +1,41 @@
+.virkopedia {
+  @include component-container;
+
+  .virkopedia-container {
+    @include flex-col-gap-1rem;
+
+    @include breakpoint-md-up {
+      flex-direction: row;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      line-height: 2rem;
+    }
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include breakpoint-md-up {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex: 0 0 200px;
+    }
+
+    .article-btn {
+      @include borderless-button;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      text-decoration: underline;
+    }
+
+    .active-btn {
+      @include borderless-button;
+      font-weight: $font-weight-bold;
+    }
+  }
+}

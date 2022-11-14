@@ -1,0 +1,33 @@
+.modal {
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: -1;
+  }
+
+  .show-modal {
+    visibility: visible;
+    z-index: 1;
+  }
+
+  .modal-container {
+    @include flex-col-gap-1rem;
+    color: var(--font-and-border);
+    background-color: var(--bcg);
+    padding: 2rem;
+    border: $border;
+  }
+
+  .close-modal-middle {
+    @include large-button;
+    margin-top: 2rem;
+  }
+}
