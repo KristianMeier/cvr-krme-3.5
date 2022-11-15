@@ -13,10 +13,9 @@ export const UserHint = () => {
       title='Beneath are the companies in the database'
       onClick={() => navigate(LANDING_PAGE_PATH)}
       btnTitle='To Frontpage'
-      content={allCompanies.map((company) => {
-        const { companyName } = company
-        return <p>{companyName} </p>
-      })}
+      content={allCompanies.map(({ companyName }) => (
+        <p>{companyName}</p>
+      ))}
     />
   )
 }

@@ -9,14 +9,17 @@ export const FooterSections = [
 
 export const Footer = () => (
   <div className='footer'>
-    <section className='logo-container'>
-      <h1>Virk.dk</h1>
-    </section>
-    {FooterSections.map((footerSection, index) => {
-      const { section, className } = footerSection
-      return (
-        <FooterSection key={index} section={section} className={className} />
-      )
-    })}
+    <div className='footer-center'>
+      <section className='logo-container'>
+        <h1>Virk.dk</h1>
+      </section>
+      {FooterSections.map(({ section, className }, index) => (
+        <FooterSection
+          key={className}
+          section={section}
+          className={className}
+        />
+      ))}
+    </div>
   </div>
 )

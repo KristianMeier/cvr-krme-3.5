@@ -14,18 +14,15 @@ export const Virkopedia = () => {
       <h1>Virkopedia</h1>
       <div className='virkopedia-container'>
         <div className='btn-container'>
-          {allArticles.map((article) => {
-            const { heading, arrayIndex } = article
-            return (
-              <VirkopediaTab
-                key={arrayIndex}
-                setActiveButtonIndex={setActiveButtonIndex}
-                heading={heading}
-                arrayIndex={arrayIndex}
-                activeButtonIndex={activeButtonIndex}
-              />
-            )
-          })}
+          {allArticles.map(({ heading, arrayIndex }) => (
+            <VirkopediaTab
+              key={arrayIndex}
+              setActiveButtonIndex={setActiveButtonIndex}
+              heading={heading}
+              arrayIndex={arrayIndex}
+              activeButtonIndex={activeButtonIndex}
+            />
+          ))}
         </div>
         <VirkopediaArticle heading={heading} paragraphs={paragraphs} />
       </div>

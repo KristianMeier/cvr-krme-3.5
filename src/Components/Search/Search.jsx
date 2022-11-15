@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { COMPANIES_PER_PAGE } from '../../Constants/Constants'
+import { COMPANIES_PER_PAGE, USER_HINT_PATH } from '../../Constants/Constants'
 import { SearchCompany } from './SearchCompany'
 import { SearchPagination } from './SearchPagination'
 import { SearchApi } from '../../Backend/SearchApi'
@@ -26,7 +26,8 @@ export const Search = ({ searchField }) => {
     setNPages(result.numberOfPages)
   }, [page, searchField])
 
-  if (companies.length === 0 && searchField !== '') return <SearchNoResults />
+  if (companies.length === 0 && searchField !== '')
+    return <SearchNoResults userHintPath={USER_HINT_PATH} />
 
   if (companies.length > 0)
     return (

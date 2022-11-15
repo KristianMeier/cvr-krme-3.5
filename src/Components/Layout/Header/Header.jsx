@@ -7,14 +7,11 @@ export const Header = () => (
   <div className='header'>
     <h1>CVR - Business in Denmark</h1>
     <div className='header-container'>
-      {titleLinks.map((titlelink) => {
-        const { text, link } = titlelink
-        return (
-          <Link className='header-link' to={link} key={link}>
-            {text}
-          </Link>
-        )
-      })}
+      {titleLinks.map(({ text, link }) => (
+        <Link className='header-link' to={link} key={link}>
+          {text}
+        </Link>
+      ))}
     </div>
   </div>
 )

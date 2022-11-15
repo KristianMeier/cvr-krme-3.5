@@ -8,12 +8,11 @@ const companyInfoData = JsData.searchData.companyinfoTitles
 
 export const Company = () => {
   const { arrayIndex } = useParams()
-
   const tableData = convertCompanyData(JsData.searchData.companies[arrayIndex])
 
-  return !tableData ? (
-    <h1>No companies found...</h1>
-  ) : (
+  if (!tableData) return <h1>No companies found...</h1>
+
+  return (
     <section className='company-page'>
       <h1> {tableData.companyName} </h1>
       <CompanyTable company={tableData} />

@@ -11,9 +11,8 @@ export const ProtectedRoute = ({ children }) => {
     AUTH_LOCAL_STORAGE_KEY,
     LOG_OUT_LOCAL_STORAGE_VALUE
   )
-  return loginStatus === LOG_OUT_LOCAL_STORAGE_VALUE ? (
-    <Navigate to={NO_ACCESS_PATH} />
-  ) : (
-    children
-  )
+  if (loginStatus === LOG_OUT_LOCAL_STORAGE_VALUE)
+    return <Navigate to={NO_ACCESS_PATH} />
+
+  return children
 }

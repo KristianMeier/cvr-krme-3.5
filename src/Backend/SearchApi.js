@@ -12,12 +12,11 @@ export const SearchApi = (searchField, page) => {
     }
   }
 
-  const filteredCompanies = allCompanies.filter((company) => {
-    return (
+  const filteredCompanies = allCompanies.filter(
+    (company) =>
       company.companyName.toLowerCase().includes(searchField.toLowerCase()) ||
       company.address.toLowerCase().includes(searchField.toLowerCase())
-    )
-  })
+  )
 
   const firstElement = page * COMPANIES_PER_PAGE - COMPANIES_PER_PAGE
   const lastElement = page * COMPANIES_PER_PAGE

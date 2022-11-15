@@ -12,23 +12,20 @@ export const AddEmployeesTable = ({ employees, removeEmployee }) => (
             <th>Title</th>
             <th>Remove</th>
           </tr>
-          {employees.map((employee, index) => {
-            const { localStorageId, name, title } = employee
-            return (
-              <tr key={index}>
-                <td>{name}</td>
-                <td>{title}</td>
-                <td>
-                  <button
-                    className='remove-btn'
-                    onClick={() => removeEmployee(localStorageId)}
-                  >
-                    Remove
-                  </button>
-                </td>
-              </tr>
-            )
-          })}
+          {employees.map(({ localStorageId, name, title }) => (
+            <tr key={localStorageId}>
+              <td>{name}</td>
+              <td>{title}</td>
+              <td>
+                <button
+                  className='remove-btn'
+                  onClick={() => removeEmployee(localStorageId)}
+                >
+                  Remove
+                </button>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     )}

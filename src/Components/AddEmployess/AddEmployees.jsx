@@ -12,7 +12,6 @@ export const AddEmployees = () => {
     EMPLOYEE_LOCAL_STORAGE_KEY,
     NO_EMPLOYEES_LOCAL_STORAGE_VALUE
   )
-  console.log(JSON.parse(employeesInJson))
 
   const [name, setName] = useState('')
   const [title, setTitle] = useState('')
@@ -35,14 +34,9 @@ export const AddEmployees = () => {
       employees.filter((employee) => employee.localStorageId !== localStorageId)
     )
 
-  useEffect(
-    () =>
-      localStorage.setItem(
-        EMPLOYEE_LOCAL_STORAGE_KEY,
-        JSON.stringify(employees)
-      ),
-    [employees]
-  )
+  useEffect(() => {
+    localStorage.setItem(EMPLOYEE_LOCAL_STORAGE_KEY, JSON.stringify(employees))
+  }, [employees])
 
   return (
     <div className='add-employess'>

@@ -1,6 +1,5 @@
 // Auth
 export const AUTH_LOCAL_STORAGE_KEY = 'userNamePassword'
-export const EMPLOYEE_LOCAL_STORAGE_KEY = 'employees'
 export const LOG_OUT_LOCAL_STORAGE_VALUE = 'logget out'
 
 // Darkmode
@@ -24,4 +23,5 @@ export const YOUTUBE_PATH = 'https://www.youtube.com/watch?v=V3h1ikA_AWk'
 export const GITHUB_PATH = 'https://github.com/KristianMeier/cvr-krme-v3'
 
 // Add Employees
-export const NO_EMPLOYEES_LOCAL_STORAGE_VALUE = []
+export const EMPLOYEE_LOCAL_STORAGE_KEY = 'employees'
+export const NO_EMPLOYEES_LOCAL_STORAGE_VALUE = '[]'
