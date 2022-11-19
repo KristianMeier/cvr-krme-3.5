@@ -29,6 +29,7 @@ export const SignInPage = () => {
       <h1>Login Page</h1>
       <article className='sign-in-container'>
         <Form
+          className='input-field'
           placeholderOne='Insert name...'
           placeholderTwo='Insert password...'
           valueOne={name}

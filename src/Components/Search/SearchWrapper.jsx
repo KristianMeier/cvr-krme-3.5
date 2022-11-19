@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { TextInput } from '../Other/TextInput'
 import { Search } from './Search'
 
 export const SearchWrapper = () => {
@@ -11,7 +12,8 @@ export const SearchWrapper = () => {
           <h1>Search the CVR</h1>
         </div>
         <div>
-          <input
+          <TextInput
+            className='search-input'
             type='search'
             placeholder='Search for the company here...'
             onChange={(e) => setSearchField(e.target.value)}

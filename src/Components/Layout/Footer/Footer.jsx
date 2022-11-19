@@ -14,11 +14,7 @@ export const Footer = () => (
         <h1>Virk.dk</h1>
       </section>
       {FooterSections.map(({ section, className }, index) => (
-        <FooterSection
-          key={className}
-          section={section}
-          className={className}
-        />
+        <FooterSection key={index} section={section} className={className} />
       ))}
     </div>
   </div>

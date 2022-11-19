@@ -1,5 +1,7 @@
 .input-field {
-  width: 100%;
-  border: $border;
-  padding: 0.5rem;
+  @include input-field {
+    width: 100%;
+    border: $border;
+    padding: 0.5rem;
+  }
 }

@@ -1,8 +1,15 @@
-export const TextInput = ({ placeholder, value, onChange }) => (
+export const TextInput = ({
+  placeholder,
+  value,
+  onChange,
+  type,
+  className,
+}) => (
   <input
-    className='input-field'
+    className={className}
     placeholder={placeholder}
     value={value}
     onChange={onChange}
+    type={type}
   />
 )

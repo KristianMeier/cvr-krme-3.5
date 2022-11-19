@@ -43,6 +43,7 @@ export const AddEmployees = () => {
       <h1>Grant employees access to www.cvr.dk</h1>
       <div className='container'>
         <Form
+          className='input-field'
           placeholderOne='Insert name...'
           placeholderTwo='Insert title...'
           valueOne={name}

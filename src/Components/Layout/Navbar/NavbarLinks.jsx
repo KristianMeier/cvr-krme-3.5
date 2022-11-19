@@ -8,7 +8,6 @@ import {
   MY_ACCOUNT_PATH,
   SIGN_IN_PAGE_PATH,
   THEME_LOCAL_STORAGE_KEY,
-  YOUTUBE_PATH,
 } from '../../../Constants/Constants'
 import { useGlobalContext } from '../../../Context/AppContext'
 import { getLocalStorage } from '../../../Utilities/getLocalStorage'
@@ -33,13 +32,17 @@ export const NavbarLinks = ({ linksContainerRef, linksRef }) => {
         <button className='theme-button' onClick={() => toggleTheme()}>
           {theme === LIGHT_THEME ? 'Dark Theme' : 'Light Theme'}
         </button>
-        <a href={GITHUB_PATH}>Mocks</a>
+        <a className='nav-links' href={GITHUB_PATH}>
+          Mocks
+        </a>
         {login !== LOG_OUT_LOCAL_STORAGE_VALUE ? (
-          <Link cla to={MY_ACCOUNT_PATH}>
+          <Link className='nav-links' to={MY_ACCOUNT_PATH}>
             My Account
           </Link>
         ) : (
-          <Link to={SIGN_IN_PAGE_PATH}>Sign In</Link>
+          <Link className='nav-links' to={SIGN_IN_PAGE_PATH}>
+            Sign In
+          </Link>
         )}
       </ul>
     </div>

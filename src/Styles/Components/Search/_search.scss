@@ -6,9 +6,10 @@
   }
 
   .search-no-results {
-    .user-hint {
-      font-weight: $font-weight-bold;
-      text-decoration: none;
+    .user-hint-link {
+      @include link {
+        font-weight: $font-weight-bold;
+      }
     }
 
     h3 {
@@ -20,15 +21,17 @@
     width: 100%;
   }
 
-  input {
-    margin-bottom: 1rem;
-    width: 100%;
-    padding: 1rem;
-    border: $border;
+  .search-input {
+    @include input-field {
+      margin-bottom: 1rem;
+      width: 100%;
+      padding: 1rem;
+      border: $border;
+    }
   }
 
   .search-company {
-    text-decoration: none;
+    @include link;
 
     .search-article {
       @include flex-col-gap-1rem;
@@ -37,6 +40,10 @@
       margin-bottom: 2rem;
       border: $border;
       padding: 1.5rem;
+
+      &:hover {
+        box-shadow: var(--border-shadow);
+      }
 
       @include breakpoint-md-up {
         flex-direction: row;

@@ -19,8 +19,8 @@ export const NO_ACCESS_PATH = '/noaccess'
 export const NO_ROUTE_PATH = '/:routeParams'
 export const COMPANY_PATH = '/company/:arrayIndex'
 export const USER_HINT_PATH = '/userhint'
-export const YOUTUBE_PATH = 'https://www.youtube.com/watch?v=V3h1ikA_AWk'
-export const GITHUB_PATH = 'https://github.com/KristianMeier/cvr-krme-v3'
+export const GITHUB_PATH =
+  'https://github.com/KristianMeier/cvr-krme-3.5/tree/master/public/Mocks'
 
 // Add Employees
 export const EMPLOYEE_LOCAL_STORAGE_KEY = 'employees'
