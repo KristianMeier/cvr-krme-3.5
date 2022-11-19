@@ -10,7 +10,9 @@
   }
 
   .header-link {
-    text-decoration: none;
+    @include dark-mode-inherit {
+      text-decoration: none;
+    }
   }
 
   h1 {

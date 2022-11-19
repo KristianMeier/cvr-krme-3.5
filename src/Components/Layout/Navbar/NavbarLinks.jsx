@@ -33,10 +33,11 @@ export const NavbarLinks = ({ linksContainerRef, linksRef }) => {
         <button className='theme-button' onClick={() => toggleTheme()}>
           {theme === LIGHT_THEME ? 'Dark Theme' : 'Light Theme'}
         </button>
-        <a href={GITHUB_PATH}>Code</a>
-        <a href={YOUTUBE_PATH}>About</a>
+        <a href={GITHUB_PATH}>Mocks</a>
         {login !== LOG_OUT_LOCAL_STORAGE_VALUE ? (
-          <Link to={MY_ACCOUNT_PATH}>My Account</Link>
+          <Link cla to={MY_ACCOUNT_PATH}>
+            My Account
+          </Link>
         ) : (
           <Link to={SIGN_IN_PAGE_PATH}>Sign In</Link>
         )}

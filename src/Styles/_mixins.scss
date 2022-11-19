@@ -45,8 +45,21 @@
   margin: 1rem 0;
 }
 
+@mixin dark-mode-inherit {
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
+  @content;
+
+  &:hover {
+    transform: $transform;
+  }
+  // transition: inherit;
+}
+
 // Buttons
 @mixin button {
+  @include dark-mode-inherit;
   font-family: inherit;
   cursor: pointer;
   text-transform: capitalize;
@@ -55,6 +68,11 @@
 @mixin borderless-button {
   @include button;
   border: none;
+  @content;
+
+  &:hover {
+    transform: $transform;
+  }
 }
 
 @mixin large-button {
@@ -62,4 +80,13 @@
   font-size: 1.25rem;
   padding: 1rem;
   border: $border;
+  @content;
+
+  &:hover {
+    color: var(--bcg);
+    background-color: var(--font-and-border);
+    border-color: var(--bcg);
+  }
 }
+
+// Add @darkmodeinherit til all input og as.

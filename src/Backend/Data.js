@@ -12,7 +12,7 @@ export const JsData = {
         link: LANDING_PAGE_PATH,
       },
       {
-        text: 'Virkopedia',
+        text: 'Help - Virkopedia',
         link: VIRKOPEDIA_PATH,
       },
       {
