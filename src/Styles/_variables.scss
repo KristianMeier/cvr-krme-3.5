@@ -3,8 +3,8 @@ $transition: all 0.2s linear;
 $transform: scale(1.05);
 
 //Font-weight
-$font-weight-light: 300;
-$font-weight-bold: 700;
+$font-weight-light: 350;
+$font-weight-bold: 650;
 
 //Breakpoints
 $breakpoint-lg: 1200px;
@@ -21,11 +21,8 @@ $noBorder: none;
 
 //Button Padding
 $noPadding: 0;
-$paddingSmallestButton: 0.5rem;
-$paddingSmallButton: 0.75rem;
+$paddingSmallButton: 0.5rem;
 $paddingMediumButton: 1.25rem;
-$paddingLargeButton: 1.75rem;
-
 //Button Font-size
 $fontSizeSmall: 0.75rem;
 $fontSizeMedium: 1rem;

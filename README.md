@@ -16,15 +16,15 @@
 
 ### What do I want to practice in this project?
 
+- `Darkmode build from scratch`
 - `Basic React and ES6 Syntax`
 - `Basic SCSS (Variables and Mixins)`
 - `Responsive design with Flexbox`
-- `Darkmode build from scratch`
 - `Authentication and Protected content.`
 
 ### What did I **Not** intent to pratice in this project?
 
-- `Modern styling (thats for the next project).`
+- `Modern styling.`
 - `Backend technologies`
 - `Grid (not used in www.billy.dk)`
 - `Testing (not used in billy.dk)`
@@ -32,13 +32,3 @@
 ### What will i work on in the next project?
 
 - `Modern styling. I will emulate https://bilbasen.dk.`
-
-Indput field mouse over blue. ingen border. Eller også skal de rlaves en nu var der
-
-Prøv at sætte Darkmode væk fra Sort. Så er det mere behageligt.
-
-Sign In button
-
-Læs alt igennem, og se om der kan laves mixins.
-
-husk at fjerne class name fra input til Textinput.

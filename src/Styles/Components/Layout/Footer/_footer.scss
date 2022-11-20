@@ -29,10 +29,7 @@
       align-items: center;
       justify-content: center;
 
-      .odd-link:nth-child(odd) {
-        font-weight: $font-weight-bold;
-      }
-
+      .odd-link:nth-child(odd),
       .first-link:first-child {
         font-weight: $font-weight-bold;
       }
