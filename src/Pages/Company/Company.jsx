@@ -5,6 +5,7 @@ import { CompanyInfo } from './CompanyInfo'
 import { CompanyTable } from './CompanyTable'
 
 const companyInfoData = JsData.searchData.companyinfoTitles
+const lorem = JsData.lorem
 
 export const Company = () => {
   const { arrayIndex } = useParams()
@@ -18,8 +19,8 @@ export const Company = () => {
       <h2> {companyName} </h2>
       <CompanyTable company={company} />
       <div className='all-companies-info'>
-        {companyInfoData.map((title) => (
-          <CompanyInfo key={title} title={title} info={JsData.lorem} />
+        {companyInfoData.map((companyInfo, index) => (
+          <CompanyInfo key={index} {...companyInfo} lorem={lorem} />
         ))}
       </div>
     </section>

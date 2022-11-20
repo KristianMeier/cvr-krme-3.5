@@ -1,17 +1,23 @@
 import { useState } from 'react'
 import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai'
 
-export const CompanyInfo = ({ title, info }) => {
+export const CompanyInfo = ({ shortText, longText, lorem }) => {
   const [showInfo, setShowInfo] = useState(false)
+  // const { shortText, longText } = companyInfo
+  // console.log(companyInfo)
   return (
     <div className='company-info'>
-      <article>
-        <h3>{title}</h3>
-        <button onClick={() => setShowInfo(!showInfo)}>
+      <article className='container'>
+        <h3 className='short-text'> {shortText} </h3>
+        <h3 className='long-text'> {longText} </h3>
+        <button
+          className='show-hide-btn'
+          onClick={() => setShowInfo(!showInfo)}
+        >
           {showInfo ? <AiFillCaretUp /> : <AiFillCaretDown />}
         </button>
       </article>
-      {showInfo && <p>{info}</p>}
+      {showInfo && <p className='content'> {lorem} </p>}
     </div>
   )
 }

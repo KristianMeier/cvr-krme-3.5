@@ -1,9 +1,13 @@
 .search {
   @include component-container;
 
+  .search-container {
+    width: 100%;
+  }
+
   .search-title {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   .search-no-results {

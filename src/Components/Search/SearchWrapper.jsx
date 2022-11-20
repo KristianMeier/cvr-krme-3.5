@@ -7,18 +7,16 @@ export const SearchWrapper = () => {
 
   return (
     <div className='search'>
-      <section>
+      <div className='search-container'>
         <h2 className='search-title'>Search the CVR</h2>
-        <div>
-          <TextInput
-            className='search-input'
-            type='search'
-            placeholder='Search for the company here...'
-            onChange={(e) => setSearchField(e.target.value)}
-          />
-        </div>
+        <TextInput
+          className='search-input'
+          type='search'
+          placeholder='Search for the company here...'
+          onChange={(e) => setSearchField(e.target.value)}
+        />
         <Search searchField={searchField} />
-      </section>
+      </div>
     </div>
   )
 }

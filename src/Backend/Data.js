@@ -160,14 +160,38 @@ export const JsData = {
 
   searchData: {
     companyinfoTitles: [
-      'Extended com...',
-      'Registration...',
-      'Ownership',
-      'Financial rep...',
-      'P-Units',
-      'Reg. History...',
-      'Employees',
-      'Order docs...',
+      {
+        shortText: 'Extended com...',
+        longText: 'Extended company information',
+      },
+      {
+        shortText: 'Drawingrules...',
+        longText: 'Drawingrules and circle of trust',
+      },
+      {
+        shortText: 'Owners...',
+        longText: 'Owners circustances',
+      },
+      {
+        shortText: 'Annual repports',
+        longText: 'Annual repports',
+      },
+      {
+        shortText: 'P-Units',
+        longText: 'P-Units',
+      },
+      {
+        shortText: 'History of...',
+        longText: 'History of comany registry',
+      },
+      {
+        shortText: 'Historic...',
+        longText: 'Historic company data',
+      },
+      {
+        shortText: 'Number of...',
+        longText: 'Number of Employees',
+      },
     ],
     companies: [
       {

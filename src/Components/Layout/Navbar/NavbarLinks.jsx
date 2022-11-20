@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   DARK_THEME,
-  GITHUB_PATH,
   LIGHT_THEME,
   LOG_OUT_LOCAL_STORAGE_VALUE,
   MY_ACCOUNT_PATH,
@@ -32,9 +31,6 @@ export const NavbarLinks = ({ linksContainerRef, linksRef }) => {
         <button className='theme-btn' onClick={() => toggleTheme()}>
           {theme === LIGHT_THEME ? 'Dark Theme' : 'Light Theme'}
         </button>
-        <a className='nav-links' href={GITHUB_PATH}>
-          Mocks
-        </a>
         {login !== LOG_OUT_LOCAL_STORAGE_VALUE ? (
           <Link className='nav-links' to={MY_ACCOUNT_PATH}>
             My Account
