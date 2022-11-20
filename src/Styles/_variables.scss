@@ -1,3 +1,9 @@
+//Darkmode
+$hover-color: var(--hover-color);
+$box-shadow: var(--border-shadow);
+$darkmodeFontAndBorder: var(--font-and-border);
+$darkModeBackground: var(--bcg);
+
 //Transitions
 $transition: all 0.2s linear;
 $transform: scale(1.05);
@@ -12,9 +18,6 @@ $breakpoint-xmd: 1000px;
 $breakpoint-md: 767px;
 $breakpoint-sm: 576px;
 
-//Hover
-$hover-color: lightblue;
-
 //Border
 $border: solid 1px;
 $noBorder: none;
@@ -23,10 +26,11 @@ $noBorder: none;
 $noPadding: 0;
 $paddingSmallButton: 0.5rem;
 $paddingMediumButton: 1.25rem;
+
 //Button Font-size
-$fontSizeSmall: 0.75rem;
-$fontSizeMedium: 1rem;
-$fontSizeLarge: 1.25rem;
+$fontSizeSmallButton: 0.75rem;
+$fontSizeMediumButton: 1rem;
+$fontSizeLargeButton: 1.25rem;
 
 //Input-field
 $fullInputWidth: 100%;

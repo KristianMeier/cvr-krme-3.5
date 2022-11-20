@@ -20,14 +20,12 @@
 
   .modal-container {
     @include flex-col-gap-1rem;
-    color: var(--font-and-border);
-    background-color: var(--bcg);
     padding: 2rem;
     border: $border;
   }
 
   .close-modal-middle {
-    @include button($border, $paddingMediumButton, $fontSizeMedium);
+    @include button($border, $paddingMediumButton, $fontSizeMediumButton);
     margin-top: 2rem;
   }
 }

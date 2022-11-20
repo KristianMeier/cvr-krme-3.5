@@ -1,5 +1,5 @@
 .navbar {
-  box-shadow: var(--border-shadow);
+  box-shadow: $box-shadow;
   display: flex;
   justify-content: left;
 
@@ -42,7 +42,7 @@
   }
 
   .nav-toggle {
-    @include button($noBorder, $noPadding, $fontSizeSmall);
+    @include button($noBorder, $noPadding, $fontSizeSmallButton);
     font-size: 1.5rem;
 
     @include breakpoint-md-up {
