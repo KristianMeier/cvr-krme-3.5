@@ -1,8 +1,8 @@
 //Darkmode
-$hover-color: var(--hover-color);
-$box-shadow: var(--border-shadow);
-$darkmodeFontAndBorder: var(--font-and-border);
-$darkModeBackground: var(--bcg);
+$hover-color: var(--darkmode-hover-color);
+$box-shadow: var(--darkmode-border-shadow);
+$darkmodeFontAndBorder: var(--darkmode-font-and-border);
+$darkModeBackground: var(--darkmode-background);
 
 //Transitions
 $transition: all 0.2s linear;

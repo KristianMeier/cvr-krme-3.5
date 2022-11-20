@@ -11,7 +11,7 @@ export const Virkopedia = () => {
 
   return (
     <div className='virkopedia'>
-      <h1>Virkopedia</h1>
+      <h2>Virkopedia</h2>
       <div className='virkopedia-container'>
         <div className='btn-container'>
           {allArticles.map(({ heading, arrayIndex }) => (

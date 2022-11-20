@@ -33,11 +33,11 @@
       padding-left: 1rem;
     }
 
-    tr {
+    .employees-row {
       border: $border;
     }
 
-    table {
+    .employees-table {
       width: 100%;
       border: $border;
       text-align: center;
@@ -52,7 +52,7 @@
       border: $border;
     }
 
-    h3 {
+    .no-employees {
       padding: 1rem;
     }
   }

@@ -29,7 +29,7 @@ export const NavbarLinks = ({ linksContainerRef, linksRef }) => {
   return (
     <div className='links-container' ref={linksContainerRef}>
       <ul className='links' ref={linksRef}>
-        <button className='theme-button' onClick={() => toggleTheme()}>
+        <button className='theme-btn' onClick={() => toggleTheme()}>
           {theme === LIGHT_THEME ? 'Dark Theme' : 'Light Theme'}
         </button>
         <a className='nav-links' href={GITHUB_PATH}>

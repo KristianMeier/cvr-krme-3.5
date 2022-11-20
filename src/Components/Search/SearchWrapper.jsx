@@ -8,9 +8,7 @@ export const SearchWrapper = () => {
   return (
     <div className='search'>
       <section>
-        <div className='title'>
-          <h1>Search the CVR</h1>
-        </div>
+        <h2 className='search-title'>Search the CVR</h2>
         <div>
           <TextInput
             className='search-input'

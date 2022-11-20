@@ -1,11 +1,7 @@
 .my-account {
   @include component-container;
 
-  button {
-    @include button($border, 1rem, 1.25rem);
-  }
-
-  p {
-    line-height: 1.5rem;
+  .action-btn {
+    @include button($border, $paddingSmallButton);
   }
 }

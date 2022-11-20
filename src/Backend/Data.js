@@ -5,6 +5,7 @@ import {
 } from '../Constants/Constants'
 
 export const JsData = {
+  logo: 'Virk.dk',
   headerData: {
     titleLinks: [
       {

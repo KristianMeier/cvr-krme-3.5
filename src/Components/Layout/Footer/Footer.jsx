@@ -11,7 +11,7 @@ export const Footer = () => (
   <div className='footer'>
     <div className='footer-center'>
       <section className='logo-container'>
-        <h1>Virk.dk</h1>
+        <h1> {JsData.logo} </h1>
       </section>
       {FooterSections.map(({ section, className }, index) => (
         <FooterSection key={index} section={section} className={className} />

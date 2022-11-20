@@ -1,7 +1,9 @@
 export const Account = ({ onClick, title, btnTitle, content }) => (
   <div className='my-account'>
-    <h1> {title} </h1>
-    <button onClick={onClick}>{btnTitle}</button>
+    <h2> {title} </h2>
+    <button className='action-btn' onClick={onClick}>
+      {btnTitle}
+    </button>
     <div>{content} </div>
   </div>
 )

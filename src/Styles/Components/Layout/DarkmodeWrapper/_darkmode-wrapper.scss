@@ -1,20 +1,20 @@
 .dark-mode-wrapper {
-  color: var(--font-and-border);
-  background-color: var(--bcg);
-  border-color: var(--font-and-border);
+  color: var(--darkmode-font-and-border);
+  background-color: var(--darkmode-background);
+  border-color: var(--darkmode-font-and-border);
   transition: $transition;
 }
 
 .light-theme {
-  --bcg: #fff;
-  --font-and-border: #282c35;
-  --border-shadow: 0 0 0.6rem 0 #888888;
-  --hover-color: darkblue;
+  --darkmode-background: #fff;
+  --darkmode-font-and-border: #282c35;
+  --darkmode-border-shadow: 0 0 0.6rem 0 #888888;
+  --darkmode-hover-color: rgb(101, 167, 189);
 }
 
 .dark-theme {
-  --bcg: #282c35;
-  --font-and-border: #fff;
-  --border-shadow: 0 0 0.6rem 0 #dadada;
-  --hover-color: lightblue;
+  --darkmode-background: #282c35;
+  --darkmode-font-and-border: #fff;
+  --darkmode-border-shadow: 0 0 0.6rem 0 #dadada;
+  --darkmode-hover-color: rgb(131, 185, 203);
 }

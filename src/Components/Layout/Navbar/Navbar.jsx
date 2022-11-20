@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
+import { JsData } from '../../../Backend/Data'
 import { NavbarLinks } from './NavbarLinks'
 
 export const Navbar = () => {
@@ -20,7 +21,7 @@ export const Navbar = () => {
     <nav className='navbar'>
       <div className='nav-center'>
         <div className='nav-header'>
-          <h1>Virk.dk</h1>
+          <h1 className='nav-logo'> {JsData.logo} </h1>
           <button className='nav-toggle' onClick={() => toggleLinks()}>
             <FaBars />
           </button>

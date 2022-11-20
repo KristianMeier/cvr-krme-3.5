@@ -33,11 +33,13 @@
     padding: 1rem;
     margin-bottom: 1rem;
     border: $border;
+    transition: max-height 1s ease-in-out;
 
     article {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      transition: max-height 1s ease-in-out;
     }
 
     button {
@@ -51,6 +53,7 @@
       margin-left: 1rem;
       color: $darkModeBackground;
       background-color: $darkmodeFontAndBorder;
+      transition: max-height 1s ease-in-out;
     }
 
     h3,

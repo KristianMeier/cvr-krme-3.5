@@ -10,7 +10,7 @@ export const Modal = ({ title, subtitle, listOne, listTwo }) => {
         }`}
       >
         <div className='modal-container'>
-          <h1>{title}</h1>
+          <h2>{title}</h2>
           {subtitle && <p>{subtitle}</p>}
           {listOne && <li>{listOne}</li>}
           {listTwo && <li>{listTwo}</li>}

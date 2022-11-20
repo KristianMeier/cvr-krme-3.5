@@ -1,6 +1,6 @@
 export const SearchPagination = ({ pageNumbers, setPage }) => (
   <div className='search-pagination'>
-    <ul>
+    <ul className='list-container'>
       {pageNumbers.map((pgNumber, index) => (
         <li key={index}>
           <button

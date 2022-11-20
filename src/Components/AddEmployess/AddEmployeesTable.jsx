@@ -2,12 +2,12 @@ export const AddEmployeesTable = ({ employees, removeEmployee }) => (
   <article className='table'>
     {employees.length === 0 ? (
       <div className='text-container'>
-        <h3>There are no employees with access.</h3>
+        <h3 className='no-employees'>There are no employees with access.</h3>
       </div>
     ) : (
-      <table>
+      <table className='employees-table'>
         <tbody>
-          <tr>
+          <tr className='employees-row'>
             <th>Name</th>
             <th>Title</th>
             <th>Remove</th>

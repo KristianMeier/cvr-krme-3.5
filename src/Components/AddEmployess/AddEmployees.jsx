@@ -41,7 +41,7 @@ export const AddEmployees = () => {
 
   return (
     <div className='add-employess'>
-      <h1>Grant employees access to www.cvr.dk</h1>
+      <h2>Grant employees access to www.cvr.dk</h2>
       <div className='container'>
         <Form onClick={handleSubmit} btnTitle='Add Employee'>
           <TextInput

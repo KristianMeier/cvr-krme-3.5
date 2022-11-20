@@ -27,7 +27,7 @@ export const SignInPage = () => {
 
   return (
     <div className='sign-in-page'>
-      <h1>Login Page</h1>
+      <h2>Login Page</h2>
       <article className='sign-in-container'>
         <Form onClick={handleSubmit} btnTitle='Sign In'>
           <TextInput

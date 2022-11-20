@@ -11,11 +11,11 @@ export const Company = () => {
   const company = convertCompanyData(JsData.searchData.companies[arrayIndex])
   const companyName = JsData.searchData.companies[arrayIndex].companyName
 
-  if (!company) return <h1>No companies found...</h1>
+  if (!company) return <h2>No companies found...</h2>
 
   return (
     <section className='company-page'>
-      <h1> {companyName} </h1>
+      <h2> {companyName} </h2>
       <CompanyTable company={company} />
       <div className='all-companies-info'>
         {companyInfoData.map((title) => (

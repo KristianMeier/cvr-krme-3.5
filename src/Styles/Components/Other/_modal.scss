@@ -20,6 +20,8 @@
 
   .modal-container {
     @include flex-col-gap-1rem;
+    color: $darkmodeFontAndBorder;
+    background-color: $darkModeBackground;
     padding: 2rem;
     border: $border;
   }
