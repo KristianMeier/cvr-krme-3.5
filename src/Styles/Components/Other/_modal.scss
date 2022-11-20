@@ -27,7 +27,7 @@
   }
 
   .close-modal-middle {
-    @include button($border, $paddingMediumButton, $fontSizeMediumButton);
+    @include button($border, $paddingMediumButton, $fontSizeMedium);
     margin-top: 2rem;
   }
 }

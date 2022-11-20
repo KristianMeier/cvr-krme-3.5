@@ -12,15 +12,3 @@
     color: $hover-color;
   }
 }
-
-@mixin input-field($paddingParam) {
-  @include inherits-for-darkmode;
-  outline: 0;
-  $border: $border;
-  width: $fullInputWidth;
-  padding: $paddingParam;
-
-  &:hover {
-    box-shadow: var(--border-shadow);
-  }
-}

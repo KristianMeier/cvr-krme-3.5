@@ -21,8 +21,7 @@
   }
 
   .search-input {
-    @include input-field($paddingBigInput);
-    margin-bottom: 1rem;
+    padding: 1.1rem;
   }
 
   .search-company {
@@ -68,7 +67,7 @@
     }
 
     .pagination-numbers {
-      @include button($noBorder, $noPadding, $fontSizeLargeButton);
+      @include button($noBorder, $noPadding, $fontSizeLarge);
       font-weight: $font-weight-bold;
     }
   }

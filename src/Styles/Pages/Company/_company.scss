@@ -41,7 +41,7 @@
     }
 
     button {
-      @include button($noBorder, $noPadding, $fontSizeMediumButton);
+      @include button($noBorder, $noPadding, $fontSizeMedium);
       width: 2rem;
       height: 2rem;
       display: flex;

@@ -31,14 +31,12 @@ export const SignInPage = () => {
       <article className='sign-in-container'>
         <Form onClick={handleSubmit} btnTitle='Sign In'>
           <TextInput
-            className='input-field'
             placeholder='Insert name...'
             value={name}
             type='text'
             onChange={(e) => setName(e.target.value)}
           />
           <TextInput
-            className='input-field'
             placeholder='Insert password...'
             value={password}
             onChange={(e) => setPassword(e.target.value)}

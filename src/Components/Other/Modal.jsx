@@ -1,6 +1,6 @@
 import { useGlobalContext } from '../../Context/AppContext'
 
-export const Modal = ({ title, subtitle }) => {
+export const Modal = ({ title, subtitle, listOne, listTwo }) => {
   const { isModalOpen, closeModal } = useGlobalContext()
   return (
     <div className='modal'>
@@ -12,6 +12,8 @@ export const Modal = ({ title, subtitle }) => {
         <div className='modal-container'>
           <h1>{title}</h1>
           {subtitle && <p>{subtitle}</p>}
+          {listOne && <li>{listOne}</li>}
+          {listTwo && <li>{listTwo}</li>}
           <button className='close-modal-middle' onClick={closeModal}>
             Close
           </button>

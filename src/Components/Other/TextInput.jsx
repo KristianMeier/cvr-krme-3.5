@@ -6,10 +6,12 @@ export const TextInput = ({
   className,
 }) => (
   <input
-    className={className}
+    className={`text-input  ${className}`}
     placeholder={placeholder}
     value={value}
     onChange={onChange}
     type={type}
   />
 )
+
+// 'text-input' ``

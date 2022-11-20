@@ -45,14 +45,12 @@ export const AddEmployees = () => {
       <div className='container'>
         <Form onClick={handleSubmit} btnTitle='Add Employee'>
           <TextInput
-            className='input-field'
             placeholder='Insert name...'
             value={name}
             type='text'
             onChange={(e) => setName(e.target.value)}
           />
           <TextInput
-            className='input-field'
             placeholder='Insert title...'
             value={title}
             type='text'

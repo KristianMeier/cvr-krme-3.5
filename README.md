@@ -32,3 +32,13 @@
 ### What will i work on in the next project?
 
 - `Modern styling. I will emulate https://bilbasen.dk.`
+
+Indput field mouse over blue. ingen border. Eller også skal de rlaves en nu var der
+
+Prøv at sætte Darkmode væk fra Sort. Så er det mere behageligt.
+
+Sign In button
+
+Læs alt igennem, og se om der kan laves mixins.
+
+husk at fjerne class name fra input til Textinput.

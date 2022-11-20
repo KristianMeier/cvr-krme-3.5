@@ -1,0 +1,11 @@
+.text-input {
+  @include inherits-for-darkmode;
+  border: $border;
+  width: $fullInputWidth;
+  outline: 0;
+  padding: $paddingSmallInput;
+
+  &:hover {
+    color: $hover-color;
+  }
+}

@@ -27,12 +27,12 @@
     }
 
     .article-btn {
-      @include button($noBorder, $paddingSmallestButton, $fontSizeLargeButton);
+      @include button($noBorder, $paddingSmallestButton, $fontSizeLarge);
       text-decoration: underline;
     }
 
     .active-btn {
-      @include button($noBorder, $noPadding);
+      @include button($noBorder, $paddingSmallestButton, $fontSizeLarge);
       font-weight: $font-weight-bold;
     }
   }
