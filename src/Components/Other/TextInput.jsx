@@ -13,5 +13,3 @@ export const TextInput = ({
     type={type}
   />
 )
-
-// 'text-input' ``

@@ -3,8 +3,7 @@ import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai'
 
 export const CompanyInfo = ({ shortText, longText, lorem }) => {
   const [showInfo, setShowInfo] = useState(false)
-  // const { shortText, longText } = companyInfo
-  // console.log(companyInfo)
+
   return (
     <div className='company-info'>
       <article className='container'>

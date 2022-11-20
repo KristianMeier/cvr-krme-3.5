@@ -5,6 +5,7 @@ import { SearchPagination } from './SearchPagination'
 import { SearchApi } from '../../Backend/SearchApi'
 import { SearchNoResults } from './SearchNoResults'
 import { JsData } from '../../Backend/Data'
+import { convertSearchData } from '../../Backend/convertSearchData'
 
 const allCompanies = JsData.searchData.companies
 const startPages = Math.ceil(allCompanies.length / COMPANIES_PER_PAGE)
@@ -32,9 +33,16 @@ export const Search = ({ searchField }) => {
   if (companies.length > 0)
     return (
       <div>
-        {companies.map((company) => (
-          <SearchCompany key={company.arrayIndex} company={company} />
-        ))}
+        {companies.map((company) => {
+          const convertedData = convertSearchData({ ...company })
+          return (
+            <SearchCompany
+              key={company.arrayIndex}
+              arrayIndex={company.arrayIndex}
+              convertedData={convertedData}
+            />
+          )
+        })}
         {searchField !== '' && (
           <SearchPagination pageNumbers={pageNumbers} setPage={setPage} />
         )}

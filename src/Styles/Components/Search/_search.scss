@@ -26,7 +26,8 @@
   }
 
   .search-company {
-    @include link;
+    @include inherits-for-darkmode;
+    text-decoration: none;
 
     .search-article {
       @include flex-col-gap-1rem;
