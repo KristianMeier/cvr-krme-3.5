@@ -5,6 +5,7 @@ import {
 } from '../../Constants/Constants'
 import { getLocalStorage } from '../../Utilities/getLocalStorage'
 import { Form } from '../Other/Form'
+import { TextInput } from '../Other/TextInput'
 import { AddEmployeesTable } from './AddEmployeesTable'
 
 export const AddEmployees = () => {
@@ -42,18 +43,22 @@ export const AddEmployees = () => {
     <div className='add-employess'>
       <h1>Grant employees access to www.cvr.dk</h1>
       <div className='container'>
-        <Form
-          className='input-field'
-          placeholderOne='Insert name...'
-          placeholderTwo='Insert title...'
-          valueOne={name}
-          valueTwo={title}
-          onChangeOne={(e) => setName(e.target.value)}
-          onChangeTwo={(e) => setTitle(e.target.value)}
-          onClick={handleSubmit}
-          btnTitle='Add Employee'
-        />
-
+        <Form onClick={handleSubmit} btnTitle='Add Employee'>
+          <TextInput
+            className='input-field'
+            placeholder='Insert name...'
+            value={name}
+            type='text'
+            onChange={(e) => setName(e.target.value)}
+          />
+          <TextInput
+            className='input-field'
+            placeholder='Insert title...'
+            value={title}
+            type='text'
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </Form>
         <AddEmployeesTable
           removeEmployee={removeEmployee}
           employees={employees}

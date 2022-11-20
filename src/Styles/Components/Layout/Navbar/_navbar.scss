@@ -27,10 +27,6 @@
       display: block;
       padding: 0.5rem 1rem;
       border: 0;
-
-      &:hover {
-        color: $hover-color;
-      }
     }
   }
 
@@ -46,7 +42,7 @@
   }
 
   .nav-toggle {
-    @include borderless-button;
+    @include button($noBorder, $noPadding, $fontSizeSmallButton);
     font-size: 1.5rem;
 
     @include breakpoint-md-up {

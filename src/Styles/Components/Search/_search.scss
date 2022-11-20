@@ -7,9 +7,8 @@
 
   .search-no-results {
     .user-hint-link {
-      @include link {
-        font-weight: $font-weight-bold;
-      }
+      @include link;
+      font-weight: $font-weight-bold;
     }
 
     h3 {
@@ -22,12 +21,8 @@
   }
 
   .search-input {
-    @include input-field {
-      margin-bottom: 1rem;
-      width: 100%;
-      padding: 1rem;
-      border: $border;
-    }
+    @include input-field($paddingBigInput);
+    margin-bottom: 1rem;
   }
 
   .search-company {
@@ -73,8 +68,7 @@
     }
 
     .pagination-numbers {
-      @include borderless-button;
-      font-size: 1.25rem;
+      @include button($noBorder, $noPadding, $fontSizeLargeButton);
       font-weight: $font-weight-bold;
     }
   }

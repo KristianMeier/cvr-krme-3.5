@@ -2,7 +2,7 @@
   @include component-container;
 
   button {
-    @include large-button;
+    @include button($border, 1rem, 1.25rem);
   }
 
   p {

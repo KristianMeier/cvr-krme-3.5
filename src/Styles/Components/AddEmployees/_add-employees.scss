@@ -24,7 +24,7 @@
     width: 100%;
 
     .remove-btn {
-      @include borderless-button;
+      @include button($noBorder);
     }
 
     td:first-child,

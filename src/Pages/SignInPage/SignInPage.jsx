@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router'
 import { MY_ACCOUNT_PATH } from '../../Constants/Constants'
 import { useGlobalContext } from '../../Context/AppContext'
 import { Form } from '../../Components/Other/Form'
+import { TextInput } from '../../Components/Other/TextInput'
 
 export const SignInPage = () => {
   const [name, setName] = useState('')
@@ -28,17 +29,22 @@ export const SignInPage = () => {
     <div className='sign-in-page'>
       <h1>Login Page</h1>
       <article className='sign-in-container'>
-        <Form
-          className='input-field'
-          placeholderOne='Insert name...'
-          placeholderTwo='Insert password...'
-          valueOne={name}
-          valueTwo={password}
-          onChangeOne={(e) => setName(e.target.value)}
-          onChangeTwo={(e) => setPassword(e.target.value)}
-          onClick={handleSubmit}
-          btnTitle='Sign In'
-        />
+        <Form onClick={handleSubmit} btnTitle='Sign In'>
+          <TextInput
+            className='input-field'
+            placeholder='Insert name...'
+            value={name}
+            type='text'
+            onChange={(e) => setName(e.target.value)}
+          />
+          <TextInput
+            className='input-field'
+            placeholder='Insert password...'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            type='text'
+          />
+        </Form>
       </article>
     </div>
   )

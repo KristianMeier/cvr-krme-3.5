@@ -27,14 +27,12 @@
     }
 
     .article-btn {
-      @include borderless-button;
-      padding: 0.5rem;
-      font-size: 1.2rem;
+      @include button($noBorder, $paddingSmallestButton, $fontSizeLargeButton);
       text-decoration: underline;
     }
 
     .active-btn {
-      @include borderless-button;
+      @include button($noBorder, $noPadding);
       font-weight: $font-weight-bold;
     }
   }
