@@ -1,9 +1,14 @@
 //Global
 @import 'global-styling';
 
-//Variables and Mixins
+//SCSS Variables
 @import 'variables';
-@import 'mixins';
+
+// Mixins
+@import 'Components/Mixins/other-mixins';
+@import 'Components/Mixins/button-mixins';
+@import 'Components/Mixins/layout-mixins';
+@import 'Components/Mixins/media-queries';
 
 //Components
 @import 'Components/Account/account';

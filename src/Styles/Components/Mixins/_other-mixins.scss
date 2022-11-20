@@ -1,0 +1,25 @@
+@mixin inherits-for-darkmode {
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
+}
+
+@mixin link {
+  @include inherits-for-darkmode;
+  text-decoration: none;
+  @content;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+@mixin input-field {
+  @include inherits-for-darkmode;
+  outline: 0;
+  @content;
+
+  &:hover {
+    box-shadow: var(--border-shadow);
+  }
+}

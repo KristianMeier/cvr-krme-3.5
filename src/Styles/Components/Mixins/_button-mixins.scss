@@ -1,0 +1,31 @@
+@mixin button-template {
+  @include inherits-for-darkmode;
+  font-family: inherit;
+  cursor: pointer;
+  text-transform: capitalize;
+  border: $border;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+@mixin borderless-button {
+  @include button-template;
+  border: none;
+}
+
+@mixin form-button {
+  @include button-template;
+  display: inline-block;
+  margin-top: 0;
+  width: 100%;
+  padding: 0.25rem 0.75rem;
+}
+
+@mixin large-button {
+  @include button-template;
+  font-size: 1.25rem;
+  padding: 1rem;
+  border: $border;
+}

@@ -1,8 +1,8 @@
-## Install and start
+## Install
 
 `npm install`
 
-## Install and start
+## Start
 
 `npm start`
 
@@ -22,7 +22,7 @@
 - `Darkmode build from scratch`
 - `Authentication and Protected content.`
 
-### What did I ** Not ** intent to pratice in this project?
+### What did I **Not** intent to pratice in this project?
 
 - `Modern styling (thats for the next project).`
 - `Backend technologies`
